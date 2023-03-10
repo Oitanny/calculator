@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <main>
+        <div class="base">
+
+            <div class="result">
+                <input disabled type="text" id="resultPrev"
+                    style="border:none; background-color: rgb(108, 107, 107);color: white; font-size: 18px; margin: 0px; padding: 5px; "
+                    value="" />
+
+                <input disabled type="text" id="result"
+                    style="border:none; background-color: grey; font-size: 22px; margin: 0px 25px; float: right; padding: 10px; "
+                    value="" />
+            </div>
+            <div class="wrapper">
+                <div class="input">
+
+                    <div class="button" id="CE" onclick="addToQuery('CE')">CE</div>
+                    <div class="button" id="C" onclick="addToQuery('C')">C</div>
+                    <div class="button" id="v" onclick="addToQuery('backspace')">←</div>
+                    <div class="button" id="+" onclick="addToQuery('+')">+</div>
+                    <div class="button" id="1" onclick="addToQuery('1')">1</div>
+                    <div class="button" id="2" onclick="addToQuery('2')">2</div>
+                    <div class="button" id="3" onclick="addToQuery('3')">3</div>
+                    <div class="button" id="-" onclick="addToQuery('-')">-</div>
+                    <div class="button" id="4" onclick="addToQuery('4')">4</div>
+                    <div class="button" id="5" onclick="addToQuery('5')">5</div>
+                    <div class="button" id="6" onclick="addToQuery('6')">6</div>
+                    <div class="button" id="x" onclick="addToQuery('x')">x</div>
+                    <div class="button" id="7" onclick="addToQuery('7')">7</div>
+                    <div class="button" id="8" onclick="addToQuery('8')">8</div>
+                    <div class="button" id="9" onclick="addToQuery('9')">9</div>
+                    <div class="button" id="/" onclick="addToQuery('/')">÷</div>
+                    <div class="button" id="0" onclick="addToQuery('0')">0</div>
+                    <div class="button" id="." onclick="addToQuery('.')">.</div>
+                    <div class="button" id="=" onclick="addToQuery('=')">=</div>
+                </div>
+            </div>
+        </div>
+        <p>For performing exponentation (x raise to power y) write x**y</p>
+
+    </main>
+    <footer>
+        <p>Made with <i class="fa fa-heart"></i> by Manpreet.</p>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
